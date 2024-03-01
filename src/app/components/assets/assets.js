@@ -1,5 +1,5 @@
 export const icons = {
-    map: "/public/images/Exhibitions/map.svg",
+    map: "./images/Exhibitions/map.svg",
   };
   
   
