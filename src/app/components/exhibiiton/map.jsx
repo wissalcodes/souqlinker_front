@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import { icons } from "@/app/components/assets/assets";
-import Table from "./Table";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import MarkerClusterGroup from "react-leaflet-cluster";
@@ -9,7 +7,7 @@ import { Icon, divIcon, point } from "leaflet";
 const guangzhouCoords = [23.1291, 113.2644];
 
 const customIcon = new Icon({
-  iconUrl: require("./Pin.svg").default,
+  iconUrl: require("./location.png").default,
   iconSize: [38, 38],
 });
 
@@ -30,8 +28,8 @@ export default function Map() {
   return (
     <>
       <MapContainer
-      center={guangzhouCoords}
-      zoom={10}
+        center={guangzhouCoords}
+        zoom={10}
         className="ml-[53vw] w-[35vw] h-[70vh]"
       >
         <TileLayer
