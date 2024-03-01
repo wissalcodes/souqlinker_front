@@ -19,7 +19,7 @@ export default function ExibitionCard() {
               height={400}
             />
 
-            <div className="flex overflow-y-auto h-[55vh] slider pr-8 absolute top-20 flex-col gap-y-3">
+            <div className="flex overflow-y-auto h-[55vh] slider pr-8 absolute top-20 flex-col ">
               <Table />
               <Table />
               <Table />
