@@ -1,8 +1,16 @@
-import Image from "next/image";
+"use client";
 import React from "react";
 import { icons } from "@/app/components/assets/assets";
 import Table from "./Table";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import MarkerClusterGroup from "react-leaflet-cluster";
+import { Icon, divIcon, point } from "leaflet";
+import Map from "./map";
+
+
 export default function ExibitionCard() {
+    
   return (
     <>
       <div className="flex items-center justify-center ">
@@ -11,14 +19,7 @@ export default function ExibitionCard() {
             Worldwide Exhibitions Dates
           </h1>
           <div className="flex gap-6">
-            <Image
-              alt="map"
-              className="absolute right-10 top-4"
-              src={icons.map}
-              width={400}
-              height={400}
-            />
-
+        <Map/>
             <div className="flex overflow-y-auto h-[55vh] slider pr-8 absolute top-20 flex-col ">
               <Table />
               <Table />
