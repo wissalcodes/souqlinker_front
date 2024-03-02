@@ -15,7 +15,7 @@ const Question = ({ question }) => {
         className={`font-semibold cursor-pointer ${
           showResponse ? `py-[20px]` : ""
         }`}>
-        {question.question}
+        &bull; {question.question}
       </div>
       {showResponse && (
         <div className="font-normal px-[20px]">{question.response}</div>
