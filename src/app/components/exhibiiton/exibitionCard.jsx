@@ -5,6 +5,7 @@ import "leaflet/dist/leaflet.css";
 import Map from "./map";
 
 export default function ExibitionCard() {
+  
   return (
     <>
       <div className="flex items-center justify-center ">
