@@ -14,7 +14,7 @@ export default function ExibitionCard() {
           </h1>
           <div className="flex gap-6">
             <Map />
-            <div className="flex overflow-y-auto w-[48vw] h-[55vh] slider pr-8 absolute top-20 flex-col ">
+            <div className=" overflow-y-auto w-[55vw] h-[55vh] slider pr-8 absolute top-20 flex-col ">
               <Table
                 eventName={"Canton Fair (China Import and Export Fair)"}
                 eventLocation={" Guangzhou, China"}

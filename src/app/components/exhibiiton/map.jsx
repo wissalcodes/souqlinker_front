@@ -7,7 +7,7 @@ import { Icon, divIcon, point } from "leaflet";
 const guangzhouCoords = [23.1291, 113.2644];
 
 const customIcon = new Icon({
-  iconUrl: require("./Pin.svg").default,
+  iconUrl: "https://cdn-icons-png.freepik.com/512/684/684908.png",
   iconSize: [38, 38],
 });
 
