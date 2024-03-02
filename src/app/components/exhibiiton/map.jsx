@@ -7,7 +7,7 @@ import { Icon, divIcon, point } from "leaflet";
 const guangzhouCoords = [23.1291, 113.2644];
 
 const customIcon = new Icon({
-  iconUrl: require("./location.png").default,
+  iconUrl: require("./Pin.svg").default,
   iconSize: [38, 38],
 });
 
@@ -30,7 +30,7 @@ export default function Map() {
       <MapContainer
         center={guangzhouCoords}
         zoom={10}
-        className="ml-[53vw] w-[35vw] h-[70vh]"
+        className="ml-[58vw] w-[30vw] h-[70vh]"
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
