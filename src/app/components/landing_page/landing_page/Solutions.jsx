@@ -1,6 +1,5 @@
 import React from "react";
 import SolutionCard from "./SolutionCard";
-import SolutionsSlider from "./SolutionsSlider";
 
 const Solutions = () => {
   const clientsSolutions = [
@@ -25,6 +24,7 @@ const Solutions = () => {
         "Get instantly matched with the perfect suppliers as a client, thanks to our advanced algorithms customized to fit your unique business needs.",
     },
   ];
+
   const suppliersSolutions = [
     {
       icon: "./images/landing_page/market.svg",
@@ -47,25 +47,22 @@ const Solutions = () => {
         "Get instantly matched with the perfect suppliers as a client, thanks to our advanced algorithms customized to fit your unique business needs.",
     },
   ];
+
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <h1 className="text-2xl font-bold mb-4">For Clients</h1>
-      <div className="swiper-container">
-        <div className="swiper-wrapper flex gap-[50px] ">
-          <SolutionsSlider solutions={clientsSolutions} />
-        </div>
-        <div className="swiper-pagination"></div>
+      <h1 className="text-2xl w-full text-start font-bold mb-4">For Clients</h1>
+      <div className="flex gap-[40px]  w-full h-full">
+        {clientsSolutions.map((solution, index) => (
+          <SolutionCard key={index} solution={solution} />
+        ))}
       </div>
-      <h1 className="text-2xl font-bold mt-8 mb-4">For Suppliers</h1>
-      <div className="swiper-container">
-        <div className="swiper-wrapper">
-          {suppliersSolutions.map((solution, index) => (
-            <div key={index} className="swiper-slide">
-              <SolutionCard solution={solution} />
-            </div>
-          ))}
-        </div>
-        <div className="swiper-pagination"></div>
+      <h1 className="text-2xl w-full text-start font-bold mb-4">
+        For Suppliers
+      </h1>
+      <div className="flex gap-[40px]  w-full h-full">
+        {suppliersSolutions.map((solution, index) => (
+          <SolutionCard key={index} solution={solution} />
+        ))}
       </div>
     </div>
   );

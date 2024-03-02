@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Question from "../components/shared/Question";
-
+import Chatbot from "../components/chatbot/Chatbot";
 const Page = () => {
   const links = [
     {
@@ -47,12 +47,13 @@ const Page = () => {
   ];
   return (
     <div className="w-full h-full grid grid-cols-2 px-[40px] py-[3%] ">
-      <div className="flex flex-col border-r-[3px] border-r-green ">
+      <div className="flex flex-col border-r-[3px] border-r-green px-[7%] ">
         <h1 className="font-bold text-3xl ">
           Start a conversation with{" "}
           <span className="text-green font-normal font-lora">ENNASIH</span>- our
           Legal conseiller.
         </h1>
+        <Chatbot />
       </div>
       <div className="flex flex-col px-[8%]">
         <h1 className="font-bold text-3xl ">
