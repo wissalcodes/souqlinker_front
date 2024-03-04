@@ -1,5 +1,6 @@
 "use client";
-import logo from "../../../../public/images/logo.svg";
+import Image from "next/image";
+import logo from "../../../public/images/logo.svg";
 import { usePathname } from "next/navigation";
 
 import Link from "next/link";
@@ -30,8 +31,21 @@ const Navbar = () => {
 
   const pathname = usePathname();
   return (
-    <div className="font-lora shadow-custom py-[14px] gap-[10px] grid grid-cols-[35%,40%,25%] mx-[40px] my-[20px] xl:px-[50px] items-center justify-center h-full">
-      <div className="w-full">{/* <img src={logo} /> */}</div>
+    <div className="font-lora shadow-custom py-[14px] gap-[10px] grid grid-cols-[35%,40%,25%] mx-[2%] my-[20px] xl:px-[50px] items-center justify-center h-full">
+      <div className="w-full flex flex-col justify-center">
+        <Image
+          alt="Mountains"
+          // Importing an image will
+          // automatically set the width and height
+          src={logo}
+          sizes="100vw"
+          // Make the image display full width
+          style={{
+            width: "30%",
+            height: "auto",
+          }}
+        />
+      </div>
       <div className="flex w-full items-center justify-end gap-[20px] px-[30px]">
         {pathname === "/" &&
           navbarItems.map((item, index) => (
