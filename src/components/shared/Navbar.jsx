@@ -34,12 +34,9 @@ const Navbar = () => {
     <div className="font-lora shadow-custom py-[14px] gap-[10px] grid grid-cols-[35%,40%,25%] mx-[2%] my-[20px] xl:px-[50px] items-center justify-center h-full">
       <div className="w-full flex flex-col justify-center">
         <Image
-          alt="Mountains"
-          // Importing an image will
-          // automatically set the width and height
+          alt="App logo"
           src={logo}
           sizes="100vw"
-          // Make the image display full width
           style={{
             width: "30%",
             height: "auto",
@@ -62,7 +59,12 @@ const Navbar = () => {
           ))}
       </div>
       <div className="flex items-end justify-end gap-[20px] ">
-        {(pathname === "/" || pathname != "/login") && (
+        {(pathname === "/" ||
+          pathname === "/register" ||
+          pathname === "/company_info" ||
+          pathname === "/company_info_next" ||
+          pathname === "/auth_info" ||
+          pathname === "/offer") && (
           <Link href="/login" className="text-gdg-second-gray text-xl">
             <button
               className={`border-[#5C7394] ${
@@ -72,12 +74,12 @@ const Navbar = () => {
             </button>
           </Link>
         )}
-        {pathname != "/type" &&
+        {pathname != "/register" &&
           pathname != "/company_info" &&
           pathname != "/company_info_next" &&
           pathname != "/auth_info" &&
           pathname != "/offer" && (
-            <Link href="/type" className="text-gdg-second-gray text-xl">
+            <Link href="/register" className="text-gdg-second-gray text-xl">
               <button className="bg-[#5C7394]  text-white font-semibold">
                 {" "}
                 Register

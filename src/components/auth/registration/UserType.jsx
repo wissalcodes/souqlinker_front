@@ -1,21 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import ProgressDots from "../components/auth/progressbar/ProgressDots";
 import Link from "next/link";
-const Page = () => {
+const UserType = ({ onNext }) => {
   return (
     <div className="flex flex-col w-full justify-start items-center h-full font-lora relative pb-[10%]">
       <div className="absolute bottom-[120px] right-[100px]">
-        <Link href="/company_info">
-          <Image
-            src="./images/auth/next-arrow.svg"
-            width={40}
-            height={30}
-            alt=""
-          />
-        </Link>
+        <Image
+          onClick={onNext}
+          src="./images/auth/next-arrow.svg"
+          width={40}
+          height={30}
+          alt=""
+        />
       </div>
-      <ProgressDots index={0} />
       <h1 className="font-bold text-5xl">Are You a</h1>
       <div className=" w-[60%] grid grid-cols-[3fr,1fr,3fr] items-center justify-center py-[70px]">
         <div className="shadow-custom gap-[20px] w-full rounded-[10px] h-[200px] flex flex-col justify-center items-center bg-white border-light-blue border-[3px]">
@@ -24,6 +21,7 @@ const Page = () => {
             width={40}
             height={40}
             alt=""
+            Link
           />
           <p className="font-medium text-3xl">Client</p>
         </div>
@@ -37,4 +35,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default UserType;

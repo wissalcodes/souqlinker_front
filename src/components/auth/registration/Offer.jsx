@@ -1,21 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import ProgressDots from "../components/auth/progressbar/ProgressDots";
 import Link from "next/link";
-const Page = () => {
+const Offer = ({ onPrevious }) => {
   return (
     <div className="flex flex-col w-full justify-start items-center h-full font-lora relative">
       <div className="absolute bottom-[120px] left-[100px]">
-        <Link href="/auth_info">
-          <Image
-            src="./images/auth/previous-arrow.svg"
-            width={30}
-            height={30}
-            alt=""
-          />
-        </Link>
+        <Image
+          src="./images/auth/previous-arrow.svg"
+          width={30}
+          height={30}
+          alt=""
+          onClick={onPrevious}
+        />
       </div>
-      <ProgressDots index={4} />
       <h1 className="font-bold text-5xl">Choose An Offer !</h1>
       <div className=" w-[50%] gap-[80px] grid grid-cols-[1fr,1fr] items-center justify-center py-[40px] ">
         <div className=" shadow-custom gap-[20px] w-full rounded-[10px] h-full flex flex-col justify-start py-[40px] items-center bg-white border-light-blue border-[3px]">
@@ -108,4 +105,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Offer;

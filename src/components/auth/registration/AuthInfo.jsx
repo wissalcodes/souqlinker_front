@@ -1,12 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import ProgressDots from "../components/auth/progressbar/ProgressDots";
 import Link from "next/link";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 
-const CompanyInfo = () => {
+const AuthInfo = ({ onPrevious, onNext }) => {
   const countryOptions = [
     { value: "option1", label: "Option 1" },
     { value: "option2", label: "Option 2" },
@@ -27,65 +26,46 @@ const CompanyInfo = () => {
   };
 
   return (
-    <div className="flex flex-col w-full px-[5%] justify-start items-center h-full font-lora relative">
-      <ProgressDots index={1} />
+    <div className="flex flex-col w-full px-[5%] justify-start items-center h-[90vh] font-lora relative">
       <div className="w-full px-[20%] flex flex-col items-center justify-center">
         <h1 className="text-start w-full font-bold text-4xl pb-[40px]">
-          Company’s Information
+          Authentication Information
         </h1>
         <input
-          placeholder="Industry Secctor"
+          placeholder="E-mail"
           type="text"
           className="border-light-blue border-[1px] rounded-[5px] w-full py-[10px] px-[20px] mb-[30px]"
         />
         <input
-          placeholder="Start Date Activity"
+          placeholder="Password"
           type="text"
           className="border-light-blue border-[1px] rounded-[5px] w-full py-[10px] px-[20px] mb-[30px]"
         />
         <input
-          placeholder="Business Phone Number"
-          type="text"
-          className="border-light-blue border-[1px] rounded-[5px] w-full py-[10px] px-[20px] mb-[30px]"
-        />
-
-        <input
-          placeholder="Business E-mail"
-          type="text"
-          className="border-light-blue border-[1px] rounded-[5px] w-full py-[10px] px-[20px] mb-[30px]"
-        />
-        <input
-          placeholder="Certifications"
-          type="text"
-          className="border-light-blue border-[1px] rounded-[5px] w-full py-[10px] px-[20px] mb-[30px]"
-        />
-        <input
-          placeholder="Business License"
+          placeholder="Confirm Password"
           type="text"
           className="border-light-blue border-[1px] rounded-[5px] w-full py-[10px] px-[20px] mb-[30px]"
         />
       </div>
       <div className="pb-[30px] pt-[15px] px-[20%] flex items-center justify-between w-full">
-        <Link href="/type">
-          <Image
-            src="./images/auth/previous-arrow.svg"
-            width={30}
-            height={30}
-            alt=""
-          />
-        </Link>
+        <Image
+          src="./images/auth/previous-arrow.svg"
+          width={30}
+          height={30}
+          alt=""
+          onClick={onPrevious}
+        />
 
-        <Link href="/company_info_next">
-          <Image
-            src="./images/auth/next-arrow.svg"
-            width={40}
-            height={30}
-            alt=""
-          />
-        </Link>
+        <Image
+          src="./images/auth/next-arrow.svg"
+          width={40}
+          height={30}
+          alt=""
+          onClick={onNext}
+        />
       </div>
     </div>
   );
 };
 
-export default CompanyInfo;
+export default AuthInfo;

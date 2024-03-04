@@ -1,12 +1,12 @@
-import React from 'react'
-import ExibitionCard from '../components/exhibiiton/exibitionCard'
+import React from "react";
+import ExhibitionCard from "../../components/exhibitions/ExhibitionCard";
 
 export default function page() {
   return (
     <>
-<div className=''>
-  <ExibitionCard/>
-</div>
+      <div className="">
+        <ExhibitionCard />
+      </div>
     </>
-  )
+  );
 }

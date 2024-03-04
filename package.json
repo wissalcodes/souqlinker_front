@@ -9,16 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "leaflet": "^1.9.4",
     "axios": "^1.6.7",
+    "leaflet": "^1.9.4",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
     "react-dropdown": "^1.11.0",
-    "react-slick": "^0.30.2",
     "react-icons": "^5.0.1",
     "react-leaflet": "^4.2.1",
     "react-leaflet-cluster": "^2.1.0",
+    "react-slick": "^0.30.2",
     "react-swiper": "^0.1.5",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.0.7"
