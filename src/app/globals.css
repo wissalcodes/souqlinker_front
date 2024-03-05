@@ -5,7 +5,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
-body{
+body {
   font-family: "lora";
 }
 a {
@@ -17,7 +17,12 @@ a {
 a:hover {
   color: #5c7394;
 }
-
+.gradient-text {
+  background-image: linear-gradient(to right, #082a52, #00659e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 body {
   background: #ffffff;
   margin: 0;
@@ -32,13 +37,9 @@ h1 {
 }
 button {
   font-weight: bold;
-  padding-left: 40px;
-  padding-right: 40px;
   background-color: transparent;
   border-width: 1px;
   border-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 button:hover {
@@ -57,7 +58,7 @@ button:focus-visible {
 }
 
 .slider::-webkit-scrollbar-thumb {
-  background-color: #e0dbdb; 
+  background-color: #e0dbdb;
   border-radius: 10px; /* Radius of the scrollbar thumb */
 }
 

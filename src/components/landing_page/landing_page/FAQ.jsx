@@ -21,12 +21,12 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="w-full h-[80vh] flex flex-col items-start justify-center">
+    <div className="my-[4%] w-full h-[70vh] flex flex-col items-start justify-center">
       <div className="flex flex-col items-start justify-center w-full h-[30%]">
         <h1 className="font-bold flex items-center">
           FAQs -
-          <span className="text-xl font-semibold">
-            {"    "}here are the answers to the most asked questions
+          <span className="ml-[10px] text-xl font-semibold">
+            here are the answers to the most asked questions
           </span>
         </h1>
       </div>

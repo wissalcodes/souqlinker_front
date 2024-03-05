@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Question from "../components/shared/Question";
-import Chatbot from "../components/chatbot/Chatbot";
+import Question from "../../components/shared/Question";
+import Chatbot from "../../components/chatbot/Chatbot";
 const Page = () => {
   const links = [
     {

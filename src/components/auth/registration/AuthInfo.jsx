@@ -47,7 +47,7 @@ const AuthInfo = ({ onPrevious, onNext }) => {
           className="border-light-blue border-[1px] rounded-[5px] w-full py-[10px] px-[20px] mb-[30px]"
         />
       </div>
-      <div className="pb-[30px] pt-[15px] px-[20%] flex items-center justify-between w-full">
+      <div className="absolute bottom-[120px] pb-[30px] pt-[15px] px-[20%] flex items-center justify-between w-full">
         <Image
           src="./images/auth/previous-arrow.svg"
           width={30}

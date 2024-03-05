@@ -13,7 +13,7 @@ const Question = ({ question }) => {
       <div
         onClick={toggleResponse}
         className={`font-semibold cursor-pointer ${
-          showResponse ? `py-[20px]` : ""
+          showResponse ? `pb-[20px]` : ""
         }`}>
         &bull; {question.question}
       </div>

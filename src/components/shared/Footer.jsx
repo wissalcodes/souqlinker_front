@@ -7,10 +7,10 @@ const Footer = () => {
   const pathname = usePathname();
   return (
     <div
-      className={`border-t-[1px] relative font-lora px-[5%]  w-full ${
+      className={`   relative font-lora px-[5%] w-full ${
         pathname === "/"
-          ? "h-[30vh] py-[40px]"
-          : "h-[12vh] items-center justify-center"
+          ? "h-[35vh] py-[40px] bg-dark-blue text-white"
+          : "h-[12vh] items-center justify-center bg-white text-black border-t-[1px]"
       } grid grid-cols-2`}>
       <div className="w-full justify-start bg-green-500 flex flex-col gap-[20px]">
         <p className="text-xl font-semibold">© 2024 All rights are reserved</p>

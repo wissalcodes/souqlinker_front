@@ -5,14 +5,26 @@ const AboutUs = () => {
   return (
     <div className="w-full h-[80vh] grid grid-cols-[45%,55%]">
       <div className="flex flex-col w-full justify-center items-start">
-        <h1 className="leading-[120%] font-bold w-[100%] py-[3%] text-5xl">
+        <h1 className="leading-[120%] font-bold w-[100%] py-[3%] text-lg lg:text-3xl xl:text-5xl">
           Global Trade, Simplified
         </h1>
-        <p className="text-2xl py-[40px]">
-          Welcome to , revolutionizing international trade in Algeria. Say
-          goodbye to complexities and discover endless opportunities.
-        </p>
-        <p className="font-semibold text-xl">
+        <div className="py-[40px] text-md lg:text-lg xl:text-2xl ">
+          <p>
+            Welcome to
+            <Image
+              className="py-[10px]"
+              src="./images/logo.svg"
+              width={200}
+              height={100}
+              alt="SouQLinker logo"
+            />
+          </p>
+          <p>
+            revolutionizing international trade in Algeria. Say goodbye to
+            complexities and discover endless opportunities.
+          </p>
+        </div>
+        <p className="font-semibold text-md lg:text-md xl:text-lg">
           Learn more -<span className="text-light-blue"> Get Started</span>
         </p>
       </div>

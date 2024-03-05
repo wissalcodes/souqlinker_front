@@ -22,7 +22,9 @@ const page = () => {
           type="password"
           className="border-light-blue border-[1px] rounded-[5px] w-[60%] py-[10px] px-[20px] mb-[30px]"
         />
-        <button className="bg-light-blue w-[60%] text-white">SIGN IN</button>
+        <button className="bg-light-blue w-[60%] text-white lg:py-[7px] xl:py-[10px]">
+          SIGN IN
+        </button>
         <p className="text-lg py-[40px] font-semibold">
           Forgot your password?{" "}
           <span className="text-green">recover it now!</span>

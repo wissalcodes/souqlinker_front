@@ -26,7 +26,7 @@ const CompanyInfoNext = ({ onPrevious, onNext }) => {
   };
 
   return (
-    <div className="flex flex-col w-full px-[5%] justify-start items-center h-[90vh] font-lora relative">
+    <div className="flex flex-col w-full px-[5%] justify-start items-center h-[100vh] font-lora relative">
       <div className="w-full px-[20%] flex flex-col items-center justify-center">
         <h1 className="text-start w-full font-bold text-4xl pb-[40px]">
           Company’s Information
